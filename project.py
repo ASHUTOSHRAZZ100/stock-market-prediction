@@ -41,3 +41,11 @@ from sklearn.preprocessing import MinMaxScaler
 scaler = MinMaxScaler(feature_range=(0,1))
 
 data_train_scale = scaler.fit_transform(data_train)
+
+x = []
+y = []
+
+for i in range(100, data_train_scale.shape[0]):
+    x.append(data_train_scale[i-100:i])
+    y.append(data_train_scale[i,0])
+    
