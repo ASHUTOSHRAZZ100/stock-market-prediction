@@ -1,6 +1,7 @@
 import yfinance as yf
 import pandas as pd
 import  matplotlib.pyplot as plt
+import numpy as np
 
 start = '2014-01-01'
 end = '2024-08-30'
@@ -48,4 +49,5 @@ y = []
 for i in range(100, data_train_scale.shape[0]):
     x.append(data_train_scale[i-100:i])
     y.append(data_train_scale[i,0])
-    
+
+x, y = np.array(x), np.array(y)
