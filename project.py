@@ -39,3 +39,5 @@ data_test.shape[0]
 
 from sklearn.preprocessing import MinMaxScaler
 scaler = MinMaxScaler(feature_range=(0,1))
+
+data_train_scale = scaler.fit_transform(data_train)
