@@ -51,3 +51,6 @@ for i in range(100, data_train_scale.shape[0]):
     y.append(data_train_scale[i,0])
 
 x, y = np.array(x), np.array(y)
+
+from keras.layers import Dense, Dropout, LSTM
+from keras.models import Sequential
