@@ -54,3 +54,19 @@ x, y = np.array(x), np.array(y)
 
 from keras.layers import Dense, Dropout, LSTM
 from keras.models import Sequential
+
+model = Sequential()
+model.add(LSTM(units = 50, activation = 'relu', return_sequences = True,
+               input_shape = ((x.shape[1],1))))
+model.add(Dropout(0.2))
+
+model.add(LSTM(units = 60, activation='relu', return_sequences = True))
+model.add(Dropout(0.3))
+
+model.add(LSTM(units = 80, activation = 'relu', return_sequences = True))
+model.add(Dropout(0.4))
+
+model.add(LSTM(units = 120, activation = 'relu'))
+model.add(Dropout(0.5))
+
+model.add(Dense(units =1))
