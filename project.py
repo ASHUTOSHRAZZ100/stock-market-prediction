@@ -120,3 +120,11 @@ for _ in range(future_days):
     current_input = np.append(current_input[1:], prediction, axis=0)
     
 future_predictions = scaler.inverse_transform(np.concatenate((last_100_days_scaled, np.array(future_predictions).reshape(-1, 1)), axis=0))[-future_days:]
+
+plt.figure(figsize=(10,8))
+plt.plot(data.Close, 'g', label='Historical Close Price')
+plt.plot(range(len(data.Close), len(data.Close) + future_days), future_predictions, 'r', label='Future Predictions')
+plt.xlabel('Time')
+plt.ylabel('Price')
+plt.legend()
+plt.show()
