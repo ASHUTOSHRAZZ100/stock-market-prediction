@@ -78,3 +78,7 @@ model.fit(x,y, epochs = 50, batch_size =32, verbose =1)
 model.summary()
 
 pas_100_days = data_train.tail(100)
+
+data_test = pd.concat([pas_100_days, data_test], ignore_index=True)
+
+data_test_scale  =  scaler.fit_transform(data_test)
