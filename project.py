@@ -82,3 +82,19 @@ pas_100_days = data_train.tail(100)
 data_test = pd.concat([pas_100_days, data_test], ignore_index=True)
 
 data_test_scale  =  scaler.fit_transform(data_test)
+
+x = []
+y = []
+
+for i in range(100, data_test_scale.shape[0]):
+    x.append(data_test_scale[i-100:i])
+    y.append(data_test_scale[i,0])
+x, y = np.array(x), np.array(y)
+
+y_predict = model.predict(x)
+
+scale =1/scaler.scale_
+
+y_predict = y_predict*scale
+
+y = y*scale
