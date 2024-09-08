@@ -12,3 +12,5 @@ print(data)
 data.reset_index(inplace=True)
 
 print(data)
+
+ma_100_days = data.Close.rolling(100).mean()
