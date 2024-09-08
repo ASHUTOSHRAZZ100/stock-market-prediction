@@ -7,3 +7,8 @@ stock = 'GOOG'
 
 data = yf.download(stock, start, end)
 
+print(data)
+
+data.reset_index(inplace=True)
+
+print(data)
