@@ -98,3 +98,11 @@ scale =1/scaler.scale_
 y_predict = y_predict*scale
 
 y = y*scale
+
+plt.figure(figsize=(10,8))
+plt.plot(y_predict, 'r', label = 'Predicted Price')
+plt.plot(y, 'g', label = 'Original Price')
+plt.xlabel('Time')
+plt.ylabel('Price')
+plt.legend()
+plt.show()
