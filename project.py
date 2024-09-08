@@ -30,3 +30,6 @@ plt.plot(data.Close,'g')
 plt.show()
 
 data.dropna(inplace=True)
+
+data_train = pd.DataFrame(data.Close[0: int(len(data)*0.80)])
+data_test = pd.DataFrame(data.Close[int(len(data)*0.80): len(data)])
