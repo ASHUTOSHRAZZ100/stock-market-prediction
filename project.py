@@ -74,3 +74,5 @@ model.add(Dense(units =1))
 model.compile(optimizer = 'adam', loss = 'mean_squared_error')
 
 model.fit(x,y, epochs = 50, batch_size =32, verbose =1)
+
+model.summary()
