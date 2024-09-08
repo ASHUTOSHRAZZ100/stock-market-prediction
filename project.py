@@ -22,3 +22,9 @@ plt.plot(data.Close, 'g')
 plt.show()
 
 ma_200_days = data.Close.rolling(200).mean()
+
+plt.figure(figsize=(8,6))
+plt.plot(ma_100_days, 'r')
+plt.plot(ma_200_days,'b')
+plt.plot(data.Close,'g')
+plt.show()
