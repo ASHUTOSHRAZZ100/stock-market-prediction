@@ -28,3 +28,5 @@ plt.plot(ma_100_days, 'r')
 plt.plot(ma_200_days,'b')
 plt.plot(data.Close,'g')
 plt.show()
+
+data.dropna(inplace=True)
