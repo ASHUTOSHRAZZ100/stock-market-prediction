@@ -106,3 +106,17 @@ plt.xlabel('Time')
 plt.ylabel('Price')
 plt.legend()
 plt.show()
+
+last_100_days = data.Close.tail(100).values
+last_100_days_scaled = scaler.transform(last_100_days.reshape(-1, 1))
+
+future_days = 30
+future_predictions = []
+current_input = last_100_days_scaled
+
+for _ in range(future_days):
+    prediction = model.predict(current_input.reshape(1, 100, 1))
+    future_predictions.append(prediction[0, 0])
+    current_input = np.append(current_input[1:], prediction, axis=0)
+    
+future_predictions = scaler.inverse_transform(np.concatenate((last_100_days_scaled, np.array(future_predictions).reshape(-1, 1)), axis=0))[-future_days:]
