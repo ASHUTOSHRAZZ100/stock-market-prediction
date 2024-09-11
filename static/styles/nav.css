@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata:700');
+
+/* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar styling */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2); /* Semi-transparent background */
+    backdrop-filter: blur(5px);
+    /* box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px; */
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px; */
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    padding: 10px 10px;
+    z-index: 2; /* Make sure navbar stays above the video */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Logo styling */
+.navbar-logo img {
+    height: 40px; /* Adjust the logo size */
+}
+
+/* Navbar Links */
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Space between the links */
+    margin-left: 2%;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.navbar-links a:hover {
+    color: #ff4d4d;
+}
+
+/* Search Bar styling */
+.navbar-search {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+/* .navbar-search input[type="text"] {
+    padding: 5px;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 3px; */
+     /* background-color: rgba(0, 0, 0, 0.2); Semi-transparent background */
+    /* border-style: solid;
+    border-color: aliceblue;
+    outline: none;
+}
+input[type=text]:focus{
+    border: 3px solid aliceblue;
+} */
+/* .navbar-search button {
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    background-color: rgba(0, 0, 0, 0.2); 
+    border-style: solid;
+    border-color: aliceblue;
+    color: white;
+     border: none;
+    border-radius: 3px;
+    cursor: pointer;
+} */
+
+/* .navbar-search button:hover {
+    background-color: #e60000;
+} */
+.container {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 300px;
+    height: 100px;
+    .search {
+      position: absolute;
+      margin: auto;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      transition: all 1s;
+      z-index: 4;
+      box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.4);
+  
+      &:hover {
+        cursor: pointer;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        margin: auto;
+        top: 22px;
+        right: 0;
+        bottom: 0;
+        left: 22px;
+        width: 12px;
+        height: 2px;
+        background: white;
+        transform: rotate(45deg);
+        transition: all .5s;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        margin: auto;
+        top: -5px;
+        right: 0;
+        bottom: 0;
+        left: -5px;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        border: 2px solid white;
+        transition: all .5s;
+      }
+    }
+    input {
+      font-family: 'Inconsolata', monospace;
+      position: absolute;
+      margin: auto;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      width: 40px;
+      height: 40px;
+      outline: none;
+      border: none;
+      /* background: crimson; */
+      background-color: rgba(0, 0, 0, 10); 
+      color: white;
+      text-shadow: 0 0 10px crimson;
+      padding: 0 80px 0 20px;
+      border-radius: 30px;
+      /* box-shadow: 0 0 25px 0 crimson,
+                  0 20px 25px 0 rgba(0, 0, 0, 0.2); */
+    
+      transition: all 1s;
+      opacity: 0;
+      z-index: 5;
+      font-weight: bolder;
+      letter-spacing: 0.1em;
+      &:hover {
+        cursor: pointer;
+      }
+      &:focus {
+        width: 300px;
+        opacity: 1;
+        cursor: text;
+      }
+      &:focus ~ .search {
+        right: -250px;
+        background: #151515;
+        z-index: 6;
+        &::before {
+          top: 0;
+          left: 0;
+          width: 25px;
+        }
+        &::after {
+          top: 0;
+          left: 0;
+          width: 25px;
+          height: 2px;
+          border: none;
+          background: white;
+          border-radius: 0%;
+          transform: rotate(-45deg);
+        }
+      }
+      &::placeholder {
+        color: white;
+        opacity: 0.5;
+        font-weight: bolder;
+      }
+    }
+  }
+  
+
+/* Auth Links styling */
+.navbar-auth {
+    display: flex;
+    gap: 15px;
+}
+
+.auth-link {
+    text-decoration: none;
+    color: white;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+.auth-link:hover {
+    color: #ff4d4d;
+}
