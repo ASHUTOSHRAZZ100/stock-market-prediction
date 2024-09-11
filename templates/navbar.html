@@ -1,0 +1,35 @@
+
+    <!-- Navbar -->
+     <div>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <!-- Logo -->
+            <a href="/" class="navbar-logo">
+                <img src="{{ url_for('static',filename='img/logo.jpg')}}" alt="Logo">
+            </a>
+            
+            <!-- Navbar Links -->
+            <ul class="navbar-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/team">Team</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+            
+            <!-- Search Bar -->
+            <form class="navbar-search" action="#" method="get">
+                <div class="container">
+                    <input type="text" placeholder="Search...">
+                    <div class="search"></div>
+                  </div>
+            </form>
+
+            
+            <!-- Auth Links -->
+            <div class="navbar-auth">
+                <a href="/login" class="auth-link">Sign In</a>
+                <a href="/register" class="auth-link">Sign Up</a>
+            </div>
+        </div>
+    </nav>
+</div>
