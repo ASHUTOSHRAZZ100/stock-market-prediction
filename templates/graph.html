@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Market Results</title>
+     <!--icon-->
+     <link rel="icon" href="{{ url_for('static', filename='img/logo.jpg') }}">
+     <!--navbar-->
+     <link rel="stylesheet" href="{{ url_for('static', filename='styles/nav.css') }}">
+     <!--graph-->
+     <link rel="stylesheet" href="{{ url_for('static', filename='styles/graph.css') }}">
+      <!-- footer -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/footer.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div>
+    {% include "navbar.html" %}
+    </div>
+    <div class="result-container">
+        <h1>Stock Market Prediction Results</h1>
+        <div class="table-container">
+            <h2>Stock Data Table</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Open</th>
+                    <th>High</th>
+                    <th>Low</th>
+                    <th>Close</th>
+                    <th>Adj Close</th>
+                    <th>Volume</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for date, open_value in stock_data['Open'].items() %}
+                <tr>
+                    <td>{{ stock_data['Open'][date] }}</td>
+                    <td>{{ stock_data['High'][date] }}</td>
+                    <td>{{ stock_data['Low'][date] }}</td>
+                    <td>{{ stock_data['Close'][date] }}</td>
+                    <td>{{ stock_data['Adj Close'][date] }}</td>
+                    <td>{{ stock_data['Volume'][date] }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+        <!--
+        <h2>Price vs MA50</h2>
+        <img src="data:image/png;base64,{{ plots['ma50'] }}" alt="Price vs MA50">
+
+        <h2>Price vs MA50 vs MA100</h2>
+        <img src="data:image/png;base64,{{ plots['ma50_ma100'] }}" alt="Price vs MA50 vs MA100">
+
+        <h2>Price vs MA100 vs MA200</h2>
+        <img src="data:image/png;base64,{{ plots['ma100_ma200'] }}" alt="Price vs MA100 vs MA200">
+        -->
+        <h2>Original Price vs Predicted Price</h2>
+        <img src="data:image/png;base64,{{ plots['original_vs_predicted'] }}" alt="Original Price vs Predicted Price">
+
+        <h2>Future Price Predictions</h2>
+        <img src="data:image/png;base64,{{ plots['future_predictions'] }}" alt="Future Price Predictions">
+
+        <a href="/">Go Back</a>
+    </div>
+    {% include "footer.html" %}
+</body>
+</html>
