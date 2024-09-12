@@ -3,6 +3,7 @@ from sklearn.preprocessing import MinMaxScaler
 import matplotlib
 matplotlib.use('Agg')
 from data import *
+from team import team_members,about_content
 
 app = Flask(__name__)
 
@@ -17,12 +18,12 @@ def home():
 # about router
 @app.route("/about")
 def about():
-    return render_template("about.html")
+    return render_template("about.html",about_contents=about_content)
 
 # team router
 @app.route("/team")
 def team():
-    return render_template("team.html")
+    return render_template("team.html",team_members=team_members)
 
 # contact router
 @app.route("/contact")
