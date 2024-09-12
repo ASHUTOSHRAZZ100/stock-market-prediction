@@ -17,9 +17,37 @@
 <body>
     
     {% include "navbar.html" %}
-    <div>
-        <h1>Team</h1>
+
+    <div class="team-section">
+        <h2 class="section-title"><span>Meet</span> The Team</h2>
+        <div class="team-container">
+            {% for member in team_members %}
+            <div class="team-member">
+                <div class="member-photo">
+                    <img src="{{ url_for('static', filename="img/p1.jpeg") }}" alt="{{ member.name }}">
+                </div>
+                <div class="member-info">
+                    <h3 class="member-name">{{ member.name }} <br><span class="member-last-name">{{ member.last_name }}</span></h3>
+                    <p class="member-role">{{ member.role }}</p>
+                    <p class="member-description">{{ member.description }}</p>
+                    <div class="member-icon">
+                        <!-- Link to social profiles -->
+                        <a href="{{ member.linkedinLink }}" target="_blank">
+                            <img src="{{ url_for('static', filename=member.linkedinIcon) }}" alt="linkedin Icon">
+                        </a>
+                        <a href="{{ member.githubLink }}" target="_blank">
+                            <img src="{{ url_for('static', filename=member.githubIcon) }}" alt="github Icon">
+                        </a>
+                        <a href="{{ member.mailLink }}" target="_blank">
+                            <img src="{{ url_for('static', filename=member.mailIcon) }}" alt="mail Icon">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
     </div>
+
     {% include "footer.html" %}
 </body>
 </html>
