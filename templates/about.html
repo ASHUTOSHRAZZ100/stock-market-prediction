@@ -16,9 +16,32 @@
 </head>
 <body>
     {% include "navbar.html" %}
-    <div>
-    <h1>About</h1>
+    {% for item in about_contents  %}
+    {% if (item.id %2 == 0)  %}
+    <div class="section" id="section1">
+        <div class="text-section">
+            <h4>{{item.Commitment}}</h4>
+            <h1>{{item.Craft}}</h1>
+            <p>{{item.description}}</p>
+        </div>
+        <div class="image-section">
+            <img src="{{ url_for('static', filename=item.photo) }}" alt="Crafting person with hat">
+        </div>
     </div>
-    {% include "footer.html" %}
+   
+    {% else %}
+    <div class="section" id="section2">
+        <div class="image-section">
+            <img src="{{ url_for('static', filename=item.photo) }}" alt="Person standing in the mountains">
+        </div>
+        <div class="text-section">
+            <h4>{{item.Commitment}}</h4>
+            <h1>{{item.Craft}}</h1>
+            <p>{{item.description}}</p>
+        </div>
+    </div>
+    {% endif %}
+    {% endfor %}
+   {% include "footer.html" %}
 </body>
 </html>
