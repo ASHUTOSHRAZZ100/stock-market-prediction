@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Inconsolata:700');
 
 /* Reset default margins and paddings */
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+} */
 
 /* Navbar styling */
 .navbar {
@@ -14,7 +14,7 @@
     left: 0;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.2); /* Semi-transparent background */
-    backdrop-filter: blur(5px);
+    /* backdrop-filter: blur(5px); */
     /* box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px; */
     /* box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px; */
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
