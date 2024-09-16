@@ -4,3 +4,4 @@ matplotlib==3.9.2
 numpy==1.26.4
 scikit-learn==1.5.1
 keras==3.5.0
+Flask==3.0.3
