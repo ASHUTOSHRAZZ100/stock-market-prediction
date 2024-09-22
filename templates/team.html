@@ -24,7 +24,7 @@
             {% for member in team_members %}
             <div class="team-member">
                 <div class="member-photo">
-                    <img src="{{ url_for('static', filename="img/p1.jpeg") }}" alt="{{ member.name }}">
+                    <img src="{{ url_for('static', filename=member.photo) }}" alt="{{ member.name }}">
                 </div>
                 <div class="member-info">
                     <h3 class="member-name">{{ member.name }} <br><span class="member-last-name">{{ member.last_name }}</span></h3>
