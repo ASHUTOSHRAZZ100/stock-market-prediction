@@ -21,7 +21,7 @@ This web application allows users to visualize stock data, including historical 
 ## Installation
 
 ### Prerequisites
-- Python 3.x
+- Python
 - Virtual environment (optional but recommended)
 - Required Python packages (see `requirements.txt`)
 
@@ -96,5 +96,17 @@ To install these dependencies, simply run:
 ```bash
 pip install -r requirements.txt
 ```
+## SHADOW Team
+| ![Alok](path_to_image.jpg) | ![Ashutosh](path_to_image.jpg) | ![Sayan](path_to_image.jpg) | ![Gaurav](path_to_image.jpg) |
+| --- | --- | --- | --- |
+| **Alok Raj** | **Ashutosh Raj** | **Sayan Singh** | **Gaurav Kumar** |
+| Designer | Backend Developer | Programmer | Main Designer |
+| [![LinkedIn](path_to_linkedin_icon.png)](https://www.linkedin.com/in/alok-raj-4a6947202/) [![GitHub](path_to_github_icon.png)](https://github.com/Ar7pvt) [![Email](path_to_email_icon.png)](mailto:alokrajgrd8@gmail.com) | [![LinkedIn](path_to_linkedin_icon.png)](https://www.linkedin.com/in/ashutoshraj100/) [![GitHub](path_to_github_icon.png)](https://github.com/ASHUTOSHRAZZ100) [![Email](path_to_email_icon.png)](mailto:ashutoshrazz100@gmail.com) | [![LinkedIn](path_to_linkedin_icon.png)](https://www.linkedin.com/in/sayan-singh) [![GitHub](path_to_github_icon.png)](https://github.com/FriendlyPedestal) [![Email](path_to_email_icon.png)](mailto:thediscoverypost@gmail.com) | [![LinkedIn](path_to_linkedin_icon.png)](https://linkedin.com) [![GitHub](path_to_github_icon.png)](https://github.com) [![Email](path_to_email_icon.png)](mailto:gaurav14052003@gmail.com) |
+| Lorem ipsum dolor sit amet, consectetur adipiscing elit. | Lorem ipsum dolor sit amet, consectetur adipiscing elit. | Lorem ipsum dolor sit amet, consectetur adipiscing elit. | Lorem ipsum dolor sit amet, consectetur adipiscing elit. |
+
+
+
+
+
 ## Credits
 This application was developed by **SHADOW** team.
