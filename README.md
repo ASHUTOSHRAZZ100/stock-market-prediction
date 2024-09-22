@@ -97,16 +97,12 @@ To install these dependencies, simply run:
 pip install -r requirements.txt
 ```
 ## SHADOW Team
-| ![Alok](path_to_image.jpg) | ![Ashutosh](path_to_image.jpg) | ![Sayan](path_to_image.jpg) | ![Gaurav](path_to_image.jpg) |
+| ![Alok](https://res.cloudinary.com/dgflj5bqs/image/upload/f_auto,q_auto/v1/stock-prediction-team/bc4dk10zpypstd9vaykt) | ![Ashutosh](https://res.cloudinary.com/dgflj5bqs/image/upload/f_auto,q_auto/v1/stock-prediction-team/qz9w5yhkexzosngnhlc6) | ![Sayan](https://res.cloudinary.com/dgflj5bqs/image/upload/f_auto,q_auto/v1/stock-prediction-team/qigie3q3ajcvv2xwm50v) | ![Gaurav](https://res.cloudinary.com/dgflj5bqs/image/upload/f_auto,q_auto/v1/stock-prediction-team/hhu7lfwy5n23hpd7mwjz) |
 | --- | --- | --- | --- |
 | **Alok Raj** | **Ashutosh Raj** | **Sayan Singh** | **Gaurav Kumar** |
-| Designer | Backend Developer | Programmer | Main Designer |
-| [![LinkedIn](path_to_linkedin_icon.png)](https://www.linkedin.com/in/alok-raj-4a6947202/) [![GitHub](path_to_github_icon.png)](https://github.com/Ar7pvt) [![Email](path_to_email_icon.png)](mailto:alokrajgrd8@gmail.com) | [![LinkedIn](path_to_linkedin_icon.png)](https://www.linkedin.com/in/ashutoshraj100/) [![GitHub](path_to_github_icon.png)](https://github.com/ASHUTOSHRAZZ100) [![Email](path_to_email_icon.png)](mailto:ashutoshrazz100@gmail.com) | [![LinkedIn](path_to_linkedin_icon.png)](https://www.linkedin.com/in/sayan-singh) [![GitHub](path_to_github_icon.png)](https://github.com/FriendlyPedestal) [![Email](path_to_email_icon.png)](mailto:thediscoverypost@gmail.com) | [![LinkedIn](path_to_linkedin_icon.png)]([https://linkedin.com](https://www.linkedin.com/in/gaurav-kumar-199893227/)) [![GitHub](path_to_github_icon.png)](https://github.com/iamgauravkr) [![Email](path_to_email_icon.png)](mailto:gaurav14052003@gmail.com) |
-| Lorem ipsum dolor sit amet, consectetur adipiscing elit. | Lorem ipsum dolor sit amet, consectetur adipiscing elit. | Lorem ipsum dolor sit amet, consectetur adipiscing elit. | Lorem ipsum dolor sit amet, consectetur adipiscing elit. |
-
-
-
-
+| Lead | Backend Developer | ML | UI |
+| [![LinkedIn](https://img.icons8.com/?size=100&id=114445&format=png&color=000000)](https://www.linkedin.com/in/alok-raj-4a6947202/) [![GitHub](https://img.icons8.com/?size=100&id=HGQomTX5FhZx&format=png&color=000000)](https://github.com/Ar7pvt) [![Email](https://img.icons8.com/?size=100&id=35084&format=png&color=000000)](mailto:alokrajgrd8@gmail.com) | [![LinkedIn](https://img.icons8.com/?size=100&id=114445&format=png&color=000000)](https://www.linkedin.com/in/ashutoshraj100/) [![GitHub](https://img.icons8.com/?size=100&id=HGQomTX5FhZx&format=png&color=000000)](https://github.com/ASHUTOSHRAZZ100) [![Email](https://img.icons8.com/?size=100&id=35084&format=png&color=000000)](mailto:ashutoshrazz100@gmail.com) | [![LinkedIn](https://img.icons8.com/?size=100&id=114445&format=png&color=000000)](https://www.linkedin.com/in/sayan-singh) [![GitHub](https://img.icons8.com/?size=100&id=HGQomTX5FhZx&format=png&color=000000)](https://github.com/FriendlyPedestal) [![Email](https://img.icons8.com/?size=100&id=35084&format=png&color=000000)](mailto:thediscoverypost@gmail.com) | [![LinkedIn](https://img.icons8.com/?size=100&id=114445&format=png&color=000000)]([https://linkedin.com](https://www.linkedin.com/in/gaurav-kumar-199893227/)) [![GitHub](https://img.icons8.com/?size=100&id=HGQomTX5FhZx&format=png&color=000000)](https://github.com/iamgauravkr) [![Email](https://img.icons8.com/?size=100&id=35084&format=png&color=000000)](mailto:gaurav14052003@gmail.com) |
+| Final Year Undergraduate(CSE-AI) | Final Year Undergraduate(CSE-AI) | Final Year Undergraduate(CSE-AI) | Final Year Undergraduate(CSE-AI) |
 
 ## Credits
 This application was developed by **SHADOW** team.
