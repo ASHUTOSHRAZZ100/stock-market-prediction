@@ -8,7 +8,16 @@ This web application allows users to visualize stock data, including historical 
 - **Predicted vs. Actual Prices**: Compare actual stock prices to predicted prices using an LSTM model.
 - **Future Price Predictions**: Forecast stock prices for the next 30 days based on historical data.
 - **Team & About Pages**: Provides information about the project and the team members involved.
-
+## Demo
+### Home Page
+![home](https://github.com/ASHUTOSHRAZZ100/stock-market-prediction/blob/main/static/img/redme/hero.png)
+### Landing Page
+![home](https://github.com/ASHUTOSHRAZZ100/stock-market-prediction/blob/main/static/img/redme/hero1.png)
+### Sample Data
+![home](https://github.com/ASHUTOSHRAZZ100/stock-market-prediction/blob/main/static/img/redme/data.png)
+### Graph Data
+![home](https://github.com/ASHUTOSHRAZZ100/stock-market-prediction/blob/main/static/img/redme/graph1.png)
+![home](https://github.com/ASHUTOSHRAZZ100/stock-market-prediction/blob/main/static/img/redme/graph2.png)
 ## Installation
 
 ### Prerequisites
