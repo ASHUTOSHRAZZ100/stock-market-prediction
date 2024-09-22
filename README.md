@@ -1,57 +1,53 @@
 # Stock Price Prediction Web Application
 
-This application provides users with insights into stock market trends through moving averages, historical stock data, and machine learning-driven price predictions. It’s a valuable tool for investors and business professionals looking to make data-driven decisions based on stock performance and future price forecasts.
+This web application allows users to visualize stock data, including historical prices, moving averages, predicted stock prices using a trained LSTM model, and future price predictions. The application is built using Flask and integrates with various data science and machine learning libraries such as `yfinance`, `pandas`, and `keras`.
 
-## Key Features
-- **Stock Data Visualization**: Analyze historical stock prices and trends using moving averages (e.g., 50-day, 100-day, and 200-day).
-- **Machine Learning Predictions**: Predict stock prices using a trained Long Short-Term Memory (LSTM) model, giving insights into future stock behavior.
-- **Future Forecasting**: Predict stock prices for the next 30 days based on past performance, helping users make informed business decisions.
+## Features
+- **Fetch Stock Data**: Users can input a stock ticker and a date range to fetch historical stock data.
+- **Moving Averages**: Visualize 50-day, 100-day, and 200-day moving averages of the stock price.
+- **Predicted vs. Actual Prices**: Compare actual stock prices to predicted prices using an LSTM model.
+- **Future Price Predictions**: Forecast stock prices for the next 30 days based on historical data.
+- **Team & About Pages**: Provides information about the project and the team members involved.
 
-## Target Audience
-This tool is designed for:
-- **Investors**: Who need real-time insights into stock trends and predictions.
-- **Financial Analysts**: For data-driven stock analysis and future price forecasting.
-- **Business Professionals**: Interested in market trends and economic insights.
-
-## Installation and Setup
+## Installation
 
 ### Prerequisites
-- **Python 3.x**
-- **Virtual Environment** (optional but recommended)
-- Install the required dependencies (see `requirements.txt`)
+- Python 3.x
+- Virtual environment (optional but recommended)
+- Required Python packages (see `requirements.txt`)
 
-### Steps to Install
-1. **Clone the Repository**:
+### Steps
+1. **Clone the Repository:**
    ```bash
    git clone https://github.com/your-username/stock-prediction-app.git
    cd stock-prediction-app
    ```
 
-2. **Create and Activate a Virtual Environment** (optional):
+2. **Create a Virtual Environment (Optional):**
    ```bash
    python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   source venv/bin/activate    # On Windows use: venv\Scripts\activate
    ```
 
-3. **Install Dependencies**:
+3. **Install Required Packages:**
    ```bash
    pip install -r requirements.txt
    ```
 
-4. **Download the LSTM Model**:
-   - Place the pre-trained model (`Stock Predictions Model.keras`) in the project root directory.
-   
-5. **Run the Application**:
+4. **Download the Pre-Trained Model:**
+   - Ensure the pre-trained model (`Stock Predictions Model.keras`) is placed in the root directory of the project. If you do not have this file, you may need to train your own model or request access to the pre-trained model.
+
+5. **Run the Application:**
    ```bash
    python app.py
    ```
 
-6. **Access the App**:
-   - Open your browser and go to `http://127.0.0.1:5000/`.
+6. **Access the Application:**
+   - Open a browser and go to `http://127.0.0.1:5000/`.
 
 ## Project Structure
 ```
-├── templates/               # HTML templates for the app
+├── templates/               # HTML templates for the Flask app
 │   ├── home.html
 │   ├── about.html
 │   ├── team.html
@@ -60,35 +56,36 @@ This tool is designed for:
 │   ├── sign_up.html
 │   └── graph.html
 ├── static/                  # Static files (CSS, images, etc.)
-├── data.py                  # Helper functions for stock data processing
-├── team.py                  # Content for the team and about pages
-├── app.py                   # Main Flask app file
+├── data.py                  # Contains helper functions for data processing
+├── team.py                  # Stores team member and about page content
+├── app.py                   # Main Flask application file
 ├── requirements.txt         # Python dependencies
-├── Stock Predictions Model.keras # Trained LSTM model
+├── Stock Predictions Model.keras # Pre-trained LSTM model
 └── README.md                # This file
 ```
 
-## Use Cases
-- **Stock Analysis**: Perform stock price analysis using technical indicators like moving averages, providing valuable insights for making buy/sell decisions.
-- **Price Prediction**: Use machine learning to predict future stock movements and enhance business forecasting.
-- **Future Planning**: Utilize 30-day forecasts for strategic financial planning, helping professionals anticipate market trends.
+## Usage
+1. **Homepage**: Start at the home page where users can navigate to different sections (About, Team, Contact, Login, Register).
+2. **Stock Graphs**:
+   - Go to the graph section, enter a stock ticker (e.g., "GOOG"), and specify a date range to fetch stock data.
+   - Visualize moving averages, predicted prices, and future price forecasts.
+3. **About**: Learn more about the project.
+4. **Team**: View details about the team members.
 
-## Technologies Used
-- **Flask**: For building the web application.
-- **yfinance**: To fetch historical stock data.
-- **pandas**: For data manipulation and analysis.
-- **matplotlib**: For visualizing stock trends.
-- **scikit-learn**: For scaling data.
-- **keras** and **tensorflow**: To build and run the LSTM model for predictions.
+## Requirements
+The required Python packages are listed in `requirements.txt`. Below are the main dependencies:
+- `Flask`
+- `yfinance`
+- `pandas`
+- `matplotlib`
+- `scikit-learn`
+- `keras`
+- `tensorflow`
 
-## Running the Application
-1. Navigate to the `/graph` route and input the stock ticker (e.g., "GOOG") along with a date range.
-2. Visualize the stock's moving averages, compare predicted prices with actual prices, and get a future price forecast.
+To install these dependencies, simply run:
 
-## Future Enhancements
-- **Real-time Data Integration**: Incorporating real-time stock data feeds.
-- **Portfolio Management**: Allowing users to analyze multiple stocks and build a personalized portfolio.
-- **Advanced Analytics**: Offering additional technical indicators (e.g., RSI, Bollinger Bands).
-
-## Contact Information
-For more information or business inquiries, please reach out via the contact page of the application or directly email us at `business@stockpredictapp.com`.
+```bash
+pip install -r requirements.txt
+```
+## Credits
+This application was developed by **SHADOW** team.
