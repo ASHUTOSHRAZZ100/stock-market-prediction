@@ -96,13 +96,13 @@ To install these dependencies, simply run:
 ```bash
 pip install -r requirements.txt
 ```
-## SHADOW Team
+## Credits
+This application was developed by **SHADOW** team.
+
+### SHADOW Team
 | ![Alok](https://res.cloudinary.com/dgflj5bqs/image/upload/f_auto,q_auto/v1/stock-prediction-team/bc4dk10zpypstd9vaykt) | ![Ashutosh](https://res.cloudinary.com/dgflj5bqs/image/upload/f_auto,q_auto/v1/stock-prediction-team/qz9w5yhkexzosngnhlc6) | ![Sayan](https://res.cloudinary.com/dgflj5bqs/image/upload/f_auto,q_auto/v1/stock-prediction-team/qigie3q3ajcvv2xwm50v) | ![Gaurav](https://res.cloudinary.com/dgflj5bqs/image/upload/f_auto,q_auto/v1/stock-prediction-team/hhu7lfwy5n23hpd7mwjz) |
 | --- | --- | --- | --- |
 | **Alok Raj** | **Ashutosh Raj** | **Sayan Singh** | **Gaurav Kumar** |
 | Lead | Backend Developer | Machine Learning(ML) | User Interface(UI) Design |
 | [LinkedIn](https://www.linkedin.com/in/alok-raj-4a6947202/)  [GitHub](https://github.com/Ar7pvt)  [Email](mailto:alokrajgrd8@gmail.com) | [LinkedIn](https://www.linkedin.com/in/ashutoshraj100/) [GitHub](https://github.com/ASHUTOSHRAZZ100) [Email](mailto:ashutoshrazz100@gmail.com) | [LinkedIn](https://www.linkedin.com/in/sayan-singh) [GitHub](https://github.com/FriendlyPedestal) [Email](mailto:thediscoverypost@gmail.com) | [LinkedIn](https://linkedin.com](https://www.linkedin.com/in/gaurav-kumar-199893227/)) [GitHub](https://github.com/iamgauravkr) [Email](mailto:gaurav14052003@gmail.com) |
 | Final Year Undergraduate(CSE-AI) | Final Year Undergraduate(CSE-AI) | Final Year Undergraduate(CSE-AI) | Final Year Undergraduate(CSE-AI) |
-
-## Credits
-This application was developed by **SHADOW** team.
